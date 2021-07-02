@@ -1,0 +1,1332 @@
+[
+  {
+    "name_en": "Canada",
+    "name_zh": "加拿大",
+    "code": 1,
+    "locale": "CA",
+    "preg": "^(\\+?1)?(\\d{6})$"
+  },
+  {
+    "name_en": "United States of America",
+    "name_zh": "美国",
+    "code": 1,
+    "locale": "US",
+    "preg": "^(\\+?1)?[2-9]\\d{2}[2-9](?!11)\\d{6}$"
+  },
+  {
+    "name_en": "Russia",
+    "name_zh": "俄罗斯",
+    "code": 7,
+    "locale": "RU",
+    "preg": "^(\\+?7|8)?9\\d{9}$"
+  },
+  {
+    "name_en": "Egypt",
+    "name_zh": "埃及",
+    "code": 20,
+    "locale": "EG",
+    "preg": "^(\\+?20)?(\\d{6})$"
+  },
+  {
+    "name_en": "South Africa",
+    "name_zh": "南非",
+    "code": 27,
+    "locale": "ZA",
+    "preg": "^(\\+?27|0)\\d{9}$"
+  },
+  {
+    "name_en": "Greece",
+    "name_zh": "希腊",
+    "code": 30,
+    "locale": "GR",
+    "preg": "^(\\+?30)?(69\\d{8})$"
+  },
+  {
+    "name_en": "Netherlands",
+    "name_zh": "荷兰",
+    "code": 31,
+    "locale": "NL",
+    "preg": "^(\\+?31)?(\\d{6})$"
+  },
+  {
+    "name_en": "Belgium",
+    "name_zh": "比利时",
+    "code": 32,
+    "locale": "BE",
+    "preg": "^(\\+?32|0)4?\\d{8}$"
+  },
+  {
+    "name_en": "France",
+    "name_zh": "法国",
+    "code": 33,
+    "locale": "FR",
+    "preg": "^(\\+?33|0)[67]\\d{8}$"
+  },
+  {
+    "name_en": "Spain",
+    "name_zh": "西班牙",
+    "code": 34,
+    "locale": "ES",
+    "preg": "^(\\+?34)?(6\\d{1}|7[1234])\\d{7}$"
+  },
+  {
+    "name_en": "Hungary",
+    "name_zh": "匈牙利",
+    "code": 36,
+    "locale": "HU",
+    "preg": "^(\\+?36)(20|30|70)\\d{7}$"
+  },
+  {
+    "name_en": "Italy",
+    "name_zh": "意大利",
+    "code": 39,
+    "locale": "IT",
+    "preg": "^(\\+?39)?\\s?3\\d{2} ?\\d{6,7}$"
+  },
+  {
+    "name_en": "Romania",
+    "name_zh": "罗马尼亚",
+    "code": 40,
+    "locale": "RO",
+    "preg": "^(\\+?40)?(\\d{6})$"
+  },
+  {
+    "name_en": "Switzerland",
+    "name_zh": "瑞士",
+    "code": 41,
+    "locale": "CH",
+    "preg": "^(\\+?41)?(\\d{6})$"
+  },
+  {
+    "name_en": "Austria",
+    "name_zh": "奥地利",
+    "code": 43,
+    "locale": "AT",
+    "preg": "^(\\+?43)?(\\d{6})$"
+  },
+  {
+    "name_en": "United Kiongdom",
+    "name_zh": "英国",
+    "code": 44,
+    "locale": "GB",
+    "preg": "^(\\+?44|0)7\\d{9}$"
+  },
+  {
+    "name_en": "Denmark",
+    "name_zh": "丹麦",
+    "code": 45,
+    "locale": "DK",
+    "preg": "^(\\+?45)?(\\d{8})$"
+  },
+  {
+    "name_en": "Sweden",
+    "name_zh": "瑞典",
+    "code": 46,
+    "locale": "SE",
+    "preg": "^(\\+?46)?(\\d{6})$"
+  },
+  {
+    "name_en": "Norway",
+    "name_zh": "挪威",
+    "code": 47,
+    "locale": "NO",
+    "preg": "^(\\+?47)?[49]\\d{7}$"
+  },
+  {
+    "name_en": "Poland",
+    "name_zh": "波兰",
+    "code": 48,
+    "locale": "PL",
+    "preg": "^(\\+?48)? ?[5-8]\\d ?\\d{3} ?\\d{2} ?\\d{2}$"
+  },
+  {
+    "name_en": "Germany",
+    "name_zh": "德国",
+    "code": 49,
+    "locale": "DE",
+    "preg": "^(\\+?49[ \\.\\-])?([\\(]{1}[0-9]{1,6}[\\)])?([0-9 \\.\\-\\]{3,20})((x|ext|extension)[ ]?[0-9]{1,4})?$"
+  },
+  {
+    "name_en": "Peru",
+    "name_zh": "秘鲁",
+    "code": 51,
+    "locale": "PE",
+    "preg": "^(\\+?51)?(\\d{6})$"
+  },
+  {
+    "name_en": "Mexico",
+    "name_zh": "墨西哥",
+    "code": 52,
+    "locale": "MX",
+    "preg": "^(\\+?52)?(\\d{6})$"
+  },
+  {
+    "name_en": "Cuba",
+    "name_zh": "古巴",
+    "code": 53,
+    "locale": "CU",
+    "preg": "^(\\+?53)?(\\d{6})$"
+  },
+  {
+    "name_en": "Argentina",
+    "name_zh": "阿根廷",
+    "code": 54,
+    "locale": "AR",
+    "preg": "^(\\+?54)?(\\d{6})$"
+  },
+  {
+    "name_en": "Brazil",
+    "name_zh": "巴西",
+    "code": 55,
+    "locale": "BR",
+    "preg": "^(\\+?55|0)\\-?[1-9]{2}\\-?[2-9]{1}\\d{3,4}\\-?\\d{4}$"
+  },
+  {
+    "name_en": "Chile",
+    "name_zh": "智利",
+    "code": 56,
+    "locale": "CL",
+    "preg": "^(\\+?56)?(\\d{6})$"
+  },
+  {
+    "name_en": "Colombia",
+    "name_zh": "哥伦比亚",
+    "code": 57,
+    "locale": "CO",
+    "preg": "^(\\+?57)?(\\d{6})$"
+  },
+  {
+    "name_en": "Venezuela",
+    "name_zh": "委内瑞拉",
+    "code": 58,
+    "locale": "VE",
+    "preg": "^(\\+?58)?(\\d{6})$"
+  },
+  {
+    "name_en": "Malaysia",
+    "name_zh": "马来西亚",
+    "code": 60,
+    "locale": "MY",
+    "preg": "^(\\+?6?01){1}(([145]{1}(\\-|\\s)?\\d{7,8})|([236789]{1}(\\s|\\-)?\\d{7}))$"
+  },
+  {
+    "name_en": "Australia",
+    "name_zh": "澳大利亚",
+    "code": 61,
+    "locale": "AU",
+    "preg": "^(\\+?61|0)4\\d{8}$"
+  },
+  {
+    "name_en": "Indonesia",
+    "name_zh": "印度尼西亚",
+    "code": 62,
+    "locale": "ID",
+    "preg": "^(\\+?62)?(\\d{6})$"
+  },
+  {
+    "name_en": "Philippines",
+    "name_zh": "菲律宾",
+    "code": 63,
+    "locale": "PH",
+    "preg": "^(\\+?63)?(\\d{6})$"
+  },
+  {
+    "name_en": "New Zealand",
+    "name_zh": "新西兰",
+    "code": 64,
+    "locale": "NZ",
+    "preg": "^(\\+?64|0)2\\d{7,9}$"
+  },
+  {
+    "name_en": "Singapore",
+    "name_zh": "新加坡",
+    "code": 65,
+    "locale": "SG",
+    "preg": "^(\\+?65)?(\\d{6})$"
+  },
+  {
+    "name_en": "Thailand",
+    "name_zh": "泰国",
+    "code": 66,
+    "locale": "TH",
+    "preg": "^(\\+?66)?(\\d{6})$"
+  },
+  {
+    "name_en": "Japan",
+    "name_zh": "日本",
+    "code": 81,
+    "locale": "JP",
+    "preg": "^(\\+?81|0)\\d{1,4}[ \\-]?\\d{1,4}[ \\-]?\\d{4}$"
+  },
+  {
+    "name_en": "Korea",
+    "name_zh": "韩国",
+    "code": 82,
+    "locale": "KR",
+    "preg": "^(\\+?82)?(\\d{6})$"
+  },
+  {
+    "name_en": "Vietnam",
+    "name_zh": "越南",
+    "code": 84,
+    "locale": "VN",
+    "preg": "^(\\+?84|0)?((1(2([0-9])|6([2-9])|88|99))|(9((?!5)[0-9])))([0-9]{7})$"
+  },
+  {
+    "name_en": "China",
+    "name_zh": "中国",
+    "code": 86,
+    "locale": "CN",
+    "preg": "^(\\+?0?86\\-?)?1[3456789]\\d{9}$"
+  },
+  {
+    "name_en": "Turkey",
+    "name_zh": "土耳其",
+    "code": 90,
+    "locale": "TR",
+    "preg": "^(\\+?90|0)?5\\d{9}$"
+  },
+  {
+    "name_en": "India",
+    "name_zh": "印度",
+    "code": 91,
+    "locale": "IN",
+    "preg": "^(\\+?91|0)?[789]\\d{9}$"
+  },
+  {
+    "name_en": "Pakistan",
+    "name_zh": "巴基斯坦",
+    "code": 92,
+    "locale": "PK",
+    "preg": "^(\\+?92)?(\\d{6})$"
+  },
+  {
+    "name_en": "Afghanistan",
+    "name_zh": "阿富汗",
+    "code": 93,
+    "locale": "AF",
+    "preg": "^(\\+?93)?(\\d{6})$"
+  },
+  {
+    "name_en": "Sri Lanka",
+    "name_zh": "斯里兰卡",
+    "code": 94,
+    "locale": "LK",
+    "preg": "^(\\+?94)?(\\d{6})$"
+  },
+  {
+    "name_en": "Burma",
+    "name_zh": "缅甸",
+    "code": 95,
+    "locale": "MM",
+    "preg": "^(\\+?95)?(\\d{6})$"
+  },
+  {
+    "name_en": "Iran",
+    "name_zh": "伊朗",
+    "code": 98,
+    "locale": "IR",
+    "preg": "^(\\+?98)?(\\d{6})$"
+  },
+  {
+    "name_en": "Morocco",
+    "name_zh": "摩洛哥",
+    "code": 212,
+    "locale": "MA",
+    "preg": "^(\\+?212)?(\\d{6})$"
+  },
+  {
+    "name_en": "Algeria",
+    "name_zh": "阿尔及利亚",
+    "code": 213,
+    "locale": "DZ",
+    "preg": "^(\\+?213|0)(5|6|7)\\d{8}$"
+  },
+  {
+    "name_en": "Tunisia",
+    "name_zh": "突尼斯",
+    "code": 216,
+    "locale": "TN",
+    "preg": "^(\\+?216)?(\\d{6})$"
+  },
+  {
+    "name_en": "Libya",
+    "name_zh": "利比亚",
+    "code": 218,
+    "locale": "LY",
+    "preg": "^(\\+?218)?(\\d{6})$"
+  },
+  {
+    "name_en": "Gambia",
+    "name_zh": "冈比亚",
+    "code": 220,
+    "locale": "GM",
+    "preg": "^(\\+?220)?(\\d{6})$"
+  },
+  {
+    "name_en": "Senegal",
+    "name_zh": "塞内加尔",
+    "code": 221,
+    "locale": "SN",
+    "preg": "^(\\+?221)?(\\d{6})$"
+  },
+  {
+    "name_en": "Mali",
+    "name_zh": "马里",
+    "code": 223,
+    "locale": "ML",
+    "preg": "^(\\+?223)?(\\d{6})$"
+  },
+  {
+    "name_en": "Guinea",
+    "name_zh": "几内亚",
+    "code": 224,
+    "locale": "GN",
+    "preg": "^(\\+?224)?(\\d{6})$"
+  },
+  {
+    "name_en": "Ivory Coast",
+    "name_zh": "科特迪瓦",
+    "code": 225,
+    "locale": "CI",
+    "preg": "^(\\+?225)?(\\d{6})$"
+  },
+  {
+    "name_en": "Burkina-faso",
+    "name_zh": "布基纳法索",
+    "code": 226,
+    "locale": "BF",
+    "preg": "^(\\+?226)?(\\d{6})$"
+  },
+  {
+    "name_en": "Niger",
+    "name_zh": "尼日尔",
+    "code": 227,
+    "locale": "NE",
+    "preg": "^(\\+?227)?(\\d{6})$"
+  },
+  {
+    "name_en": "Togo",
+    "name_zh": "多哥",
+    "code": 228,
+    "locale": "TG",
+    "preg": "^(\\+?228)?(\\d{6})$"
+  },
+  {
+    "name_en": "Benin",
+    "name_zh": "贝宁",
+    "code": 229,
+    "locale": "BJ",
+    "preg": "^(\\+?229)?(\\d{6})$"
+  },
+  {
+    "name_en": "Mauritius",
+    "name_zh": "毛里求斯",
+    "code": 230,
+    "locale": "MU",
+    "preg": "^(\\+?230)?(\\d{6})$"
+  },
+  {
+    "name_en": "Liberia",
+    "name_zh": "利比里亚",
+    "code": 231,
+    "locale": "LR",
+    "preg": "^(\\+?231)?(\\d{6})$"
+  },
+  {
+    "name_en": "Sierra Leone",
+    "name_zh": "塞拉利昂",
+    "code": 232,
+    "locale": "SL",
+    "preg": "^(\\+?232)?(\\d{6})$"
+  },
+  {
+    "name_en": "Ghana",
+    "name_zh": "加纳",
+    "code": 233,
+    "locale": "GH",
+    "preg": "^(\\+?233)?(\\d{6})$"
+  },
+  {
+    "name_en": "Uzbekistan",
+    "name_zh": "乌兹别克斯坦",
+    "code": 233,
+    "locale": "UZ",
+    "preg": "^(\\+?233)?(\\d{6})$"
+  },
+  {
+    "name_en": "Nigeria",
+    "name_zh": "尼日利亚",
+    "code": 234,
+    "locale": "NG",
+    "preg": "^(\\+?234)?(\\d{6})$"
+  },
+  {
+    "name_en": "Chad",
+    "name_zh": "乍得",
+    "code": 235,
+    "locale": "TD",
+    "preg": "^(\\+?235)?(\\d{6})$"
+  },
+  {
+    "name_en": "Central African Republic",
+    "name_zh": "中非共和国",
+    "code": 236,
+    "locale": "CF",
+    "preg": "^(\\+?236)?(\\d{6})$"
+  },
+  {
+    "name_en": "Cameroon",
+    "name_zh": "喀麦隆",
+    "code": 237,
+    "locale": "CM",
+    "preg": "^(\\+?237)?(\\d{6})$"
+  },
+  {
+    "name_en": "Sao Tome and Principe",
+    "name_zh": "圣多美和普林西比",
+    "code": 239,
+    "locale": "ST",
+    "preg": "^(\\+?239)?(\\d{6})$"
+  },
+  {
+    "name_en": "Gabon",
+    "name_zh": "加蓬",
+    "code": 241,
+    "locale": "GA",
+    "preg": "^(\\+?241)?(\\d{6})$"
+  },
+  {
+    "name_en": "Congo",
+    "name_zh": "刚果",
+    "code": 242,
+    "locale": "CG",
+    "preg": "^(\\+?242)?(\\d{6})$"
+  },
+  {
+    "name_en": "Zaire",
+    "name_zh": "扎伊尔",
+    "code": 243,
+    "locale": "ZR",
+    "preg": "^(\\+?243)?(\\d{6})$"
+  },
+  {
+    "name_en": "Angola",
+    "name_zh": "安哥拉",
+    "code": 244,
+    "locale": "AO",
+    "preg": "^(\\+?244)?(\\d{6})$"
+  },
+  {
+    "name_en": "Ascension",
+    "name_zh": "阿森松",
+    "code": 247,
+    "locale": "AC",
+    "preg": "^(\\+?247)?(\\d{6})$"
+  },
+  {
+    "name_en": "Seychelles",
+    "name_zh": "塞舌尔",
+    "code": 248,
+    "locale": "SC",
+    "preg": "^(\\+?248)?(\\d{6})$"
+  },
+  {
+    "name_en": "Sudan",
+    "name_zh": "苏丹",
+    "code": 249,
+    "locale": "SD",
+    "preg": "^(\\+?249)?(\\d{6})$"
+  },
+  {
+    "name_en": "Ethiopia",
+    "name_zh": "埃塞俄比亚",
+    "code": 251,
+    "locale": "ET",
+    "preg": "^(\\+?251)?(\\d{6})$"
+  },
+  {
+    "name_en": "Somali",
+    "name_zh": "索马里",
+    "code": 252,
+    "locale": "SO",
+    "preg": "^(\\+?252)?(\\d{6})$"
+  },
+  {
+    "name_en": "Djibouti",
+    "name_zh": "吉布提",
+    "code": 253,
+    "locale": "DJ",
+    "preg": "^(\\+?253)?(\\d{6})$"
+  },
+  {
+    "name_en": "Kenya",
+    "name_zh": "肯尼亚",
+    "code": 254,
+    "locale": "KE",
+    "preg": "^(\\+?254)?(\\d{6})$"
+  },
+  {
+    "name_en": "Tanzania",
+    "name_zh": "坦桑尼亚",
+    "code": 255,
+    "locale": "TZ",
+    "preg": "^(\\+?255)?(\\d{6})$"
+  },
+  {
+    "name_en": "Uganda",
+    "name_zh": "乌干达",
+    "code": 256,
+    "locale": "UG",
+    "preg": "^(\\+?256)?(\\d{6})$"
+  },
+  {
+    "name_en": "Burundi",
+    "name_zh": "布隆迪",
+    "code": 257,
+    "locale": "BI",
+    "preg": "^(\\+?257)?(\\d{6})$"
+  },
+  {
+    "name_en": "Mozambique",
+    "name_zh": "莫桑比克",
+    "code": 258,
+    "locale": "MZ",
+    "preg": "^(\\+?258)?(\\d{6})$"
+  },
+  {
+    "name_en": "Zambia",
+    "name_zh": "赞比亚",
+    "code": 260,
+    "locale": "ZM",
+    "preg": "^(\\+?26)?09[567]\\d{7}$"
+  },
+  {
+    "name_en": "Madagascar",
+    "name_zh": "马达加斯加",
+    "code": 261,
+    "locale": "MG",
+    "preg": "^(\\+?261)?(\\d{6})$"
+  },
+  {
+    "name_en": "Reunion",
+    "name_zh": "留尼旺",
+    "code": 262,
+    "locale": "RE",
+    "preg": "^(\\+?262)?(\\d{6})$"
+  },
+  {
+    "name_en": "Zimbabwe",
+    "name_zh": "津巴布韦",
+    "code": 263,
+    "locale": "ZW",
+    "preg": "^(\\+?263)?(\\d{6})$"
+  },
+  {
+    "name_en": "Namibia",
+    "name_zh": "纳米比亚",
+    "code": 264,
+    "locale": "NA",
+    "preg": "^(\\+?264)?(\\d{6})$"
+  },
+  {
+    "name_en": "Malawi",
+    "name_zh": "马拉维",
+    "code": 265,
+    "locale": "MW",
+    "preg": "^(\\+?265)?(\\d{6})$"
+  },
+  {
+    "name_en": "Lesotho",
+    "name_zh": "莱索托",
+    "code": 266,
+    "locale": "LS",
+    "preg": "^(\\+?266)?(\\d{6})$"
+  },
+  {
+    "name_en": "Botswana",
+    "name_zh": "博茨瓦纳",
+    "code": 267,
+    "locale": "BW",
+    "preg": "^(\\+?267)?(\\d{6})$"
+  },
+  {
+    "name_en": "Swaziland",
+    "name_zh": "斯威士兰",
+    "code": 268,
+    "locale": "SZ",
+    "preg": "^(\\+?268)?(\\d{6})$"
+  },
+  {
+    "name_en": "Kazakstan",
+    "name_zh": "哈萨克斯坦",
+    "code": 327,
+    "locale": "KZ",
+    "preg": "^(\\+?327)?(\\d{6})$"
+  },
+  {
+    "name_en": "Kyrgyzstan",
+    "name_zh": "吉尔吉斯坦",
+    "code": 331,
+    "locale": "KG",
+    "preg": "^(\\+?331)?(\\d{6})$"
+  },
+  {
+    "name_en": "Gibraltar",
+    "name_zh": "直布罗陀",
+    "code": 350,
+    "locale": "GI",
+    "preg": "^(\\+?350)?(\\d{6})$"
+  },
+  {
+    "name_en": "Portugal",
+    "name_zh": "葡萄牙",
+    "code": 351,
+    "locale": "PT",
+    "preg": "^(\\+?351)?9[1236]\\d{7}$"
+  },
+  {
+    "name_en": "Luxembourg",
+    "name_zh": "卢森堡",
+    "code": 352,
+    "locale": "LU",
+    "preg": "^(\\+?352)?(\\d{6})$"
+  },
+  {
+    "name_en": "Ireland",
+    "name_zh": "爱尔兰",
+    "code": 353,
+    "locale": "IE",
+    "preg": "^(\\+?353)?(\\d{6})$"
+  },
+  {
+    "name_en": "Iceland",
+    "name_zh": "冰岛",
+    "code": 354,
+    "locale": "IS",
+    "preg": "^(\\+?354)?(\\d{6})$"
+  },
+  {
+    "name_en": "Albania",
+    "name_zh": "阿尔巴尼亚",
+    "code": 355,
+    "locale": "AL",
+    "preg": "^(\\+?355)?(\\d{6})$"
+  },
+  {
+    "name_en": "Malta",
+    "name_zh": "马耳他",
+    "code": 356,
+    "locale": "MT",
+    "preg": "^(\\+?356)?(\\d{6})$"
+  },
+  {
+    "name_en": "Cyprus",
+    "name_zh": "塞浦路斯",
+    "code": 357,
+    "locale": "CY",
+    "preg": "^(\\+?357)?(\\d{6})$"
+  },
+  {
+    "name_en": "Finland",
+    "name_zh": "芬兰",
+    "code": 358,
+    "locale": "FI",
+    "preg": "^(\\+?358|0)\\s?(4(0|1|2|4|5)?|50)\\s?(\\d\\s?){4,8}\\d$"
+  },
+  {
+    "name_en": "Bulgaria",
+    "name_zh": "保加利亚",
+    "code": 359,
+    "locale": "BG",
+    "preg": "^(\\+?359)?(\\d{6})$"
+  },
+  {
+    "name_en": "Lithuania",
+    "name_zh": "立陶宛",
+    "code": 370,
+    "locale": "LT",
+    "preg": "^(\\+?370)?(\\d{6})$"
+  },
+  {
+    "name_en": "Latvia",
+    "name_zh": "拉脱维亚",
+    "code": 371,
+    "locale": "LV",
+    "preg": "^(\\+?371)?(\\d{6})$"
+  },
+  {
+    "name_en": "Estonia",
+    "name_zh": "爱沙尼亚",
+    "code": 372,
+    "locale": "EE",
+    "preg": "^(\\+?372)?(\\d{6})$"
+  },
+  {
+    "name_en": "Moldova, Republic of",
+    "name_zh": "摩尔多瓦",
+    "code": 373,
+    "locale": "MD",
+    "preg": "^(\\+?373)?(\\d{6})$"
+  },
+  {
+    "name_en": "Armenia",
+    "name_zh": "亚美尼亚",
+    "code": 374,
+    "locale": "AM",
+    "preg": "^(\\+?374)?(\\d{6})$"
+  },
+  {
+    "name_en": "Belarus",
+    "name_zh": "白俄罗斯",
+    "code": 375,
+    "locale": "BY",
+    "preg": "^(\\+?375)?(\\d{6})$"
+  },
+  {
+    "name_en": "Andorra",
+    "name_zh": "安道尔共和国",
+    "code": 376,
+    "locale": "AD",
+    "preg": "^(\\+?376)?(\\d{6})$"
+  },
+  {
+    "name_en": "Monaco",
+    "name_zh": "摩纳哥",
+    "code": 377,
+    "locale": "MC",
+    "preg": "^(\\+?377)?(\\d{6})$"
+  },
+  {
+    "name_en": "San Marino",
+    "name_zh": "圣马力诺",
+    "code": 378,
+    "locale": "SM",
+    "preg": "^(\\+?378)?(\\d{6})$"
+  },
+  {
+    "name_en": "Ukraine",
+    "name_zh": "乌克兰",
+    "code": 380,
+    "locale": "UA",
+    "preg": "^(\\+?380)?(\\d{6})$"
+  },
+  {
+    "name_en": "Yugoslavia",
+    "name_zh": "南斯拉夫",
+    "code": 381,
+    "locale": "YU",
+    "preg": "^(\\+?381)?(\\d{6})$"
+  },
+  {
+    "name_en": "Slovenia",
+    "name_zh": "斯洛文尼亚",
+    "code": 386,
+    "locale": "SI",
+    "preg": "^(\\+?386)?(\\d{6})$"
+  },
+  {
+    "name_en": "Czech Republic",
+    "name_zh": "捷克",
+    "code": 420,
+    "locale": "CZ",
+    "preg": "^(\\+?420)? ?[1-9][0-9]{2} ?[0-9]{3} ?[0-9]{3}$"
+  },
+  {
+    "name_en": "Slovakia",
+    "name_zh": "斯洛伐克",
+    "code": 421,
+    "locale": "SK",
+    "preg": "^(\\+?421)?(\\d{6})$"
+  },
+  {
+    "name_en": "Liechtenstein",
+    "name_zh": "列支敦士登",
+    "code": 423,
+    "locale": "LI",
+    "preg": "^(\\+?423)?(\\d{6})$"
+  },
+  {
+    "name_en": "Belize",
+    "name_zh": "伯利兹",
+    "code": 501,
+    "locale": "BZ",
+    "preg": "^(\\+?501)?(\\d{6})$"
+  },
+  {
+    "name_en": "Guatemala",
+    "name_zh": "危地马拉",
+    "code": 502,
+    "locale": "GT",
+    "preg": "^(\\+?502)?(\\d{6})$"
+  },
+  {
+    "name_en": "EI Salvador",
+    "name_zh": "萨尔瓦多",
+    "code": 503,
+    "locale": "SV",
+    "preg": "^(\\+?503)?(\\d{6})$"
+  },
+  {
+    "name_en": "Honduras",
+    "name_zh": "洪都拉斯",
+    "code": 504,
+    "locale": "HN",
+    "preg": "^(\\+?504)?(\\d{6})$"
+  },
+  {
+    "name_en": "Nicaragua",
+    "name_zh": "尼加拉瓜",
+    "code": 505,
+    "locale": "NI",
+    "preg": "^(\\+?505)?(\\d{6})$"
+  },
+  {
+    "name_en": "Costa Rica",
+    "name_zh": "哥斯达黎加",
+    "code": 506,
+    "locale": "CR",
+    "preg": "^(\\+?506)?(\\d{6})$"
+  },
+  {
+    "name_en": "Panama",
+    "name_zh": "巴拿马",
+    "code": 507,
+    "locale": "PA",
+    "preg": "^(\\+?507)?(\\d{6})$"
+  },
+  {
+    "name_en": "Haiti",
+    "name_zh": "海地",
+    "code": 509,
+    "locale": "HT",
+    "preg": "^(\\+?509)?(\\d{6})$"
+  },
+  {
+    "name_en": "Bolivia",
+    "name_zh": "玻利维亚",
+    "code": 591,
+    "locale": "BO",
+    "preg": "^(\\+?591)?(\\d{6})$"
+  },
+  {
+    "name_en": "Guyana",
+    "name_zh": "圭亚那",
+    "code": 592,
+    "locale": "GY",
+    "preg": "^(\\+?592)?(\\d{6})$"
+  },
+  {
+    "name_en": "Ecuador",
+    "name_zh": "厄瓜多尔",
+    "code": 593,
+    "locale": "EC",
+    "preg": "^(\\+?593)?(\\d{6})$"
+  },
+  {
+    "name_en": "French Guiana",
+    "name_zh": "法属圭亚那",
+    "code": 594,
+    "locale": "GF",
+    "preg": "^(\\+?594)?(\\d{6})$"
+  },
+  {
+    "name_en": "Paraguay",
+    "name_zh": "巴拉圭",
+    "code": 595,
+    "locale": "PY",
+    "preg": "^(\\+?595)?(\\d{6})$"
+  },
+  {
+    "name_en": "Martinique",
+    "name_zh": "马提尼克",
+    "code": 596,
+    "locale": "MQ",
+    "preg": "^(\\+?596)?(\\d{6})$"
+  },
+  {
+    "name_en": "Suriname",
+    "name_zh": "苏里南",
+    "code": 597,
+    "locale": "SR",
+    "preg": "^(\\+?597)?(\\d{6})$"
+  },
+  {
+    "name_en": "Uruguay",
+    "name_zh": "乌拉圭",
+    "code": 598,
+    "locale": "UY",
+    "preg": "^(\\+?598)?(\\d{6})$"
+  },
+  {
+    "name_en": "Netheriands Antilles",
+    "name_zh": "荷属安的列斯",
+    "code": 599,
+    "locale": "AN",
+    "preg": "^(\\+?599)?(\\d{6})$"
+  },
+  {
+    "name_en": "Brunei",
+    "name_zh": "文莱",
+    "code": 673,
+    "locale": "BN",
+    "preg": "^(\\+?673)?(\\d{6})$"
+  },
+  {
+    "name_en": "Nauru",
+    "name_zh": "瑙鲁",
+    "code": 674,
+    "locale": "NR",
+    "preg": "^(\\+?674)?(\\d{6})$"
+  },
+  {
+    "name_en": "Papua New Cuinea",
+    "name_zh": "巴布亚新几内亚",
+    "code": 675,
+    "locale": "PG",
+    "preg": "^(\\+?675)?(\\d{6})$"
+  },
+  {
+    "name_en": "Tonga",
+    "name_zh": "汤加",
+    "code": 676,
+    "locale": "TO",
+    "preg": "^(\\+?676)?(\\d{6})$"
+  },
+  {
+    "name_en": "Solomon Is",
+    "name_zh": "所罗门群岛",
+    "code": 677,
+    "locale": "SB",
+    "preg": "^(\\+?677)?(\\d{6})$"
+  },
+  {
+    "name_en": "Fiji",
+    "name_zh": "斐济",
+    "code": 679,
+    "locale": "FJ",
+    "preg": "^(\\+?679)?(\\d{6})$"
+  },
+  {
+    "name_en": "Cook Is.",
+    "name_zh": "库克群岛",
+    "code": 682,
+    "locale": "CK",
+    "preg": "^(\\+?682)?(\\d{6})$"
+  },
+  {
+    "name_en": "Samoa Eastern",
+    "name_zh": "东萨摩亚(美)",
+    "code": 684,
+    "locale": "AS",
+    "preg": "^(\\+?684)?(\\d{6})$"
+  },
+  {
+    "name_en": "Samoa Western",
+    "name_zh": "西萨摩亚",
+    "code": 685,
+    "locale": "",
+    "preg": "^(\\+?685)?(\\d{6})$"
+  },
+  {
+    "name_en": "French Polynesia",
+    "name_zh": "法属玻利尼西亚",
+    "code": 689,
+    "locale": "PF",
+    "preg": "^(\\+?689)?(\\d{6})$"
+  },
+  {
+    "name_en": "North Korea",
+    "name_zh": "朝鲜",
+    "code": 850,
+    "locale": "KP",
+    "preg": "^(\\+?850)?(\\d{6})$"
+  },
+  {
+    "name_en": "Hongkong",
+    "name_zh": "香港",
+    "code": 852,
+    "locale": "HK",
+    "preg": "^(\\+?852\\-?)?[569]\\d{3}\\-?\\d{4}$"
+  },
+  {
+    "name_en": "Macao",
+    "name_zh": "澳门",
+    "code": 853,
+    "locale": "MO",
+    "preg": "^(\\+?853)?(\\d{6})$"
+  },
+  {
+    "name_en": "Kampuchea (Cambodia )",
+    "name_zh": "柬埔寨",
+    "code": 855,
+    "locale": "KH",
+    "preg": "^(\\+?855)?(\\d{6})$"
+  },
+  {
+    "name_en": "Laos",
+    "name_zh": "老挝",
+    "code": 856,
+    "locale": "LA",
+    "preg": "^(\\+?856)?(\\d{6})$"
+  },
+  {
+    "name_en": "Bangladesh",
+    "name_zh": "孟加拉国",
+    "code": 880,
+    "locale": "BD",
+    "preg": "^(\\+?880)?(\\d{6})$"
+  },
+  {
+    "name_en": "Taiwan",
+    "name_zh": "台湾省",
+    "code": 886,
+    "locale": "TW",
+    "preg": "^(\\+?886\\-?|0)?9\\d{8}$"
+  },
+  {
+    "name_en": "Maldives",
+    "name_zh": "马尔代夫",
+    "code": 960,
+    "locale": "MV",
+    "preg": "^(\\+?960)?(\\d{6})$"
+  },
+  {
+    "name_en": "Lebanon",
+    "name_zh": "黎巴嫩",
+    "code": 961,
+    "locale": "LB",
+    "preg": "^(\\+?961)?(\\d{6})$"
+  },
+  {
+    "name_en": "Jordan",
+    "name_zh": "约旦",
+    "code": 962,
+    "locale": "JO",
+    "preg": "^(\\+?962)?(\\d{6})$"
+  },
+  {
+    "name_en": "Syria",
+    "name_zh": "叙利亚",
+    "code": 963,
+    "locale": "SY",
+    "preg": "^(!?(\\+?963)|0)?9\\d{8}$"
+  },
+  {
+    "name_en": "Iraq",
+    "name_zh": "伊拉克",
+    "code": 964,
+    "locale": "IQ",
+    "preg": "^(\\+?964)?(\\d{6})$"
+  },
+  {
+    "name_en": "Kuwait",
+    "name_zh": "科威特",
+    "code": 965,
+    "locale": "KW",
+    "preg": "^(\\+?965)?(\\d{6})$"
+  },
+  {
+    "name_en": "Saudi Arabia",
+    "name_zh": "沙特阿拉伯",
+    "code": 966,
+    "locale": "SA",
+    "preg": "^(!?(\\+?966)|0)?5\\d{8}$"
+  },
+  {
+    "name_en": "Yemen",
+    "name_zh": "也门",
+    "code": 967,
+    "locale": "YE",
+    "preg": "^(\\+?967)?(\\d{6})$"
+  },
+  {
+    "name_en": "Oman",
+    "name_zh": "阿曼",
+    "code": 968,
+    "locale": "OM",
+    "preg": "^(\\+?968)?(\\d{6})$"
+  },
+  {
+    "name_en": "United Arab Emirates",
+    "name_zh": "阿拉伯联合酋长国",
+    "code": 971,
+    "locale": "AE",
+    "preg": "^(\\+?971)?(\\d{6})$"
+  },
+  {
+    "name_en": "Israel",
+    "name_zh": "以色列",
+    "code": 972,
+    "locale": "IL",
+    "preg": "^(\\+972|0)([23489]|5[0248]|77)[1-9]\\d{6}"
+  },
+  {
+    "name_en": "Bahrain",
+    "name_zh": "巴林",
+    "code": 973,
+    "locale": "BH",
+    "preg": "^(\\+?973)?(\\d{6})$"
+  },
+  {
+    "name_en": "Qatar",
+    "name_zh": "卡塔尔",
+    "code": 974,
+    "locale": "QA",
+    "preg": "^(\\+?974)?(\\d{6})$"
+  },
+  {
+    "name_en": "Mongolia",
+    "name_zh": "蒙古",
+    "code": 976,
+    "locale": "MN",
+    "preg": "^(\\+?976)?(\\d{6})$"
+  },
+  {
+    "name_en": "Nepal",
+    "name_zh": "尼泊尔",
+    "code": 977,
+    "locale": "NP",
+    "preg": "^(\\+?977)?(\\d{6})$"
+  },
+  {
+    "name_en": "Tajikstan",
+    "name_zh": "塔吉克斯坦",
+    "code": 992,
+    "locale": "TJ",
+    "preg": "^(\\+?992)?(\\d{6})$"
+  },
+  {
+    "name_en": "Turkmenistan",
+    "name_zh": "土库曼斯坦",
+    "code": 993,
+    "locale": "TM",
+    "preg": "^(\\+?993)?(\\d{6})$"
+  },
+  {
+    "name_en": "Azerbaijan",
+    "name_zh": "阿塞拜疆",
+    "code": 994,
+    "locale": "AZ",
+    "preg": "^(\\+?994)?(\\d{6})$"
+  },
+  {
+    "name_en": "Georgia",
+    "name_zh": "格鲁吉亚",
+    "code": 995,
+    "locale": "GE",
+    "preg": "^(\\+?995)?(\\d{6})$"
+  },
+  {
+    "name_en": "Bahamas",
+    "name_zh": "巴哈马",
+    "code": 1242,
+    "locale": "BS",
+    "preg": "^(\\+?1242)?(\\d{6})$"
+  },
+  {
+    "name_en": "Barbados",
+    "name_zh": "巴巴多斯",
+    "code": 1246,
+    "locale": "BB",
+    "preg": "^(\\+?1246)?(\\d{6})$"
+  },
+  {
+    "name_en": "Anguilla",
+    "name_zh": "安圭拉岛",
+    "code": 1264,
+    "locale": "AI",
+    "preg": "^(\\+?1264)?(\\d{6})$"
+  },
+  {
+    "name_en": "Antigua and Barbuda",
+    "name_zh": "安提瓜和巴布达",
+    "code": 1268,
+    "locale": "AG",
+    "preg": "^(\\+?1268)?(\\d{6})$"
+  },
+  {
+    "name_en": "Cayman Is.",
+    "name_zh": "开曼群岛",
+    "code": 1345,
+    "locale": "KY",
+    "preg": "^(\\+?1345)?(\\d{6})$"
+  },
+  {
+    "name_en": "Bermuda Is.",
+    "name_zh": "百慕大群岛",
+    "code": 1441,
+    "locale": "BM",
+    "preg": "^(\\+?1441)?(\\d{6})$"
+  },
+  {
+    "name_en": "Montserrat Is",
+    "name_zh": "蒙特塞拉特岛",
+    "code": 1664,
+    "locale": "MS",
+    "preg": "^(\\+?1664)?(\\d{6})$"
+  },
+  {
+    "name_en": "Mariana Is",
+    "name_zh": "马里亚那群岛",
+    "code": 1670,
+    "locale": "ML",
+    "preg": "^(\\+?1670)?(\\d{6})$"
+  },
+  {
+    "name_en": "Guam",
+    "name_zh": "关岛",
+    "code": 1671,
+    "locale": "GU",
+    "preg": "^(\\+?1671)?(\\d{6})$"
+  },
+  {
+    "name_en": "St.Lucia",
+    "name_zh": "圣卢西亚",
+    "code": 1758,
+    "locale": "LC",
+    "preg": "^(\\+?1758)?(\\d{6})$"
+  },
+  {
+    "name_en": "St.Vincent",
+    "name_zh": "圣文森特",
+    "code": 1784,
+    "locale": "VC",
+    "preg": "^(\\+?1784)?(\\d{6})$"
+  },
+  {
+    "name_en": "Puerto Rico",
+    "name_zh": "波多黎各",
+    "code": 1787,
+    "locale": "PR",
+    "preg": "^(\\+?1787)?(\\d{6})$"
+  },
+  {
+    "name_en": "Grenada",
+    "name_zh": "格林纳达",
+    "code": 1809,
+    "locale": "GD",
+    "preg": "^(\\+?1809)?(\\d{6})$"
+  },
+  {
+    "name_en": "Trinidad and Tobago",
+    "name_zh": "特立尼达和多巴哥",
+    "code": 1809,
+    "locale": "TT",
+    "preg": "^(\\+?1809)?(\\d{6})$"
+  },
+  {
+    "name_en": "Jamaica",
+    "name_zh": "牙买加",
+    "code": 1876,
+    "locale": "JM",
+    "preg": "^(\\+?1876)?(\\d{6})$"
+  },
+  {
+    "name_en": "Dominica Rep.",
+    "name_zh": "多米尼加共和国",
+    "code": 1890,
+    "locale": "DO",
+    "preg": "^(\\+?1890)?(\\d{6})$"
+  }
+]
