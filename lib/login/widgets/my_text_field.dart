@@ -143,16 +143,16 @@ class _MyTextFieldState extends State<MyTextField> {
         counterText: '',
         focusedBorder: UnderlineInputBorder(
           borderSide: BorderSide(
-            color: themeData.primaryColor,
+            color: Colors.transparent,
             width: 0.8,
           ),
         ),
         enabledBorder: UnderlineInputBorder(
           borderSide: BorderSide(
-            color: Theme.of(context).dividerTheme.color,
+            color: Colors.transparent,
             width: 0.8,
           ),
-        ),
+         ),
       ),
     );
 
@@ -206,7 +206,7 @@ class _MyTextFieldState extends State<MyTextField> {
         text: _clickable
             ? "验证码"
             : '（$_currentSecond s）',
-        textColor: themeData.primaryColor,
+        textColor: Colours.text_gray_holder,
         disabledTextColor: isDark ? Colours.dark_text : Colors.white,
         backgroundColor: Colors.transparent,
         disabledBackgroundColor:
@@ -215,10 +215,10 @@ class _MyTextFieldState extends State<MyTextField> {
         minHeight: 26.0,
         minWidth: 76.0,
         padding: const EdgeInsets.symmetric(horizontal: 8.0),
-        side: BorderSide(
-          color: _clickable ? themeData.primaryColor : Colors.transparent,
-          width: 0.8,
-        ),
+        // side: BorderSide(
+        //   color: _clickable ? themeData.primaryColor : Colors.transparent,
+        //   width: 0.8,
+        // ),
       );
     }
 

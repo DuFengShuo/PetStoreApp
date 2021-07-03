@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:local_life_app/common/common.dart';
+import 'package:local_life_app/login/login_router.dart';
 import 'package:local_life_app/res/colors.dart';
 import 'package:local_life_app/util/image_utils.dart';
 import 'package:local_life_app/widgets/load_image.dart';
@@ -66,7 +67,7 @@ class _SplashPageState extends State<SplashPage> {
 
   void _goLogin() {
     // NavigatorUtils.push(context, LoginRouter.loginPage, replace: true);
-    NavigatorUtils.push(context, Routes.home, clearStack: true);
+    NavigatorUtils.push(context, LoginRouter.phoneOneKeyPage, clearStack: true);
   }
 
   @override

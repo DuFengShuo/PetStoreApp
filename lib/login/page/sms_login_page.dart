@@ -5,6 +5,7 @@ import 'package:local_life_app/common/common.dart';
 import 'package:local_life_app/login/iview/login_iview.dart';
 import 'package:local_life_app/login/models/area_code_model.dart';
 import 'package:local_life_app/login/models/user_bean.dart';
+import 'package:local_life_app/login/page/paseword_login_page.dart';
 import 'package:local_life_app/login/presenter/login_presenter.dart';
 import 'package:local_life_app/login/provider/login_page_provider.dart';
 import 'package:local_life_app/login/widgets/Image_input_dialog.dart';
@@ -52,6 +53,7 @@ class _SMSLoginPageState extends State<SMSLoginPage>
   bool _checkboxSelected = false;
   String _areaCode = '1';
   bool _sendSmsCode = false;
+
   @override
   Map<ChangeNotifier, List<VoidCallback>> changeNotifier() {
     final List<VoidCallback> callbacks = <VoidCallback>[_verify];
@@ -89,10 +91,9 @@ class _SMSLoginPageState extends State<SMSLoginPage>
     }
     if (vCode.isEmpty || vCode.length < 4) {
       clickable = false;
-    }else{
+    } else {
       clickable = true;
     }
-
 
     if (clickable != _clickable) {
       setState(() {
@@ -121,7 +122,7 @@ class _SMSLoginPageState extends State<SMSLoginPage>
     params['area_code'] = _areaCode;
     // await _loginPresenter.mobileLogin(params);
     await SpUtil.putString(Constant.phone, _phoneController.text);
-    Navigator.pop(context,"${_phoneController.text}");
+    Navigator.pop(context, "${_phoneController.text}");
   }
 
   void _launchWebURL(String title, String url) {
@@ -160,19 +161,19 @@ class _SMSLoginPageState extends State<SMSLoginPage>
   List<Widget> _buildBody() {
     return <Widget>[
       Text(
-       "登录",
+        "手机号登录",
         style: TextStyle(
-          fontSize: 28.0.sp,
+          fontSize: 18.0.sp,
           fontWeight: FontWeight.bold,
-          color: Colours.app_main,
+          color: Colours.text,
         ),
       ),
-      Gaps.vGap40,
+      Gaps.vGap10,
       Text(
-        '手机号',
-        style:
-            Theme.of(context).textTheme.subtitle1.copyWith(fontSize: 15.0.sp),
+        '未注册的手机号验证通过后将自动注册',
+        style: TextStyles.textSize10.copyWith(color: Colours.text_gray_holder),
       ),
+      Gaps.vGap40,
       Row(
         children: [
           // InkWell(
@@ -202,29 +203,39 @@ class _SMSLoginPageState extends State<SMSLoginPage>
           //     // ),
           //   ),
           // ),
-          ConstrainedBox(
-            constraints: BoxConstraints(
-                maxWidth: context.width - 40.0.w,
-                minHeight: 50.h,
-                maxHeight: 50.h),
-            child: MyTextField(
-              focusNode: _nodeText1,
-              controller: _phoneController,
-              maxLength: 11,
-              keyboardType: TextInputType.phone,
-              hintText: "请输入手机号",
-            ),
-          )
+          Container(
+              padding: EdgeInsets.only(left: 10.w),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(50.r)),
+                  color: Colours.bg_color),
+              child: ConstrainedBox(
+                constraints: BoxConstraints(
+                    maxWidth: context.width - 50.0.w,
+                    minHeight: 50.h,
+                    maxHeight: 50.h),
+                child: MyTextField(
+                  focusNode: _nodeText1,
+                  controller: _phoneController,
+                  maxLength: 11,
+                  keyboardType: TextInputType.phone,
+                  hintText: "请输入手机号",
+                ),
+              ))
         ],
       ),
       Gaps.vGap24,
-      Text(
-        '验证码',
-        style:
-            Theme.of(context).textTheme.subtitle1.copyWith(fontSize: 15.0.sp),
-      ),
+      // Text(
+      //   '验证码',
+      //   style:
+      //       Theme.of(context).textTheme.subtitle1.copyWith(fontSize: 15.0.sp),
+      // ),
       Consumer<LoginPageProvider>(builder: (_, provider, __) {
-        return MyTextField(
+        return    Container(
+            padding: EdgeInsets.only(left: 10.w),
+        decoration: BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(50.r)),
+        color: Colours.bg_color),
+        child:MyTextField(
           key: const Key('vcode'),
           focusNode: _nodeText2,
           controller: _vCodeController,
@@ -241,24 +252,14 @@ class _SMSLoginPageState extends State<SMSLoginPage>
               final Map<String, String> params = <String, String>{};
               params['account'] = _phoneController.text;
               _sendSmsCode = true;
-               // await _smsLoginPresenter.captchaImage(params);
+              // await _smsLoginPresenter.captchaImage(params);
               return true;
             }
           },
           maxLength: 4,
           hintText: "验证码",
-        );
+        ));
       }),
-      Gaps.vGap50,
-      Gaps.vGap10,
-      MyButton(
-        onPressed: _clickable ? _login : null,
-        text: "立即登录",
-        fontSize: Dimens.font_sp13,
-        textColor: Colours.material_bg,
-        disabledBackgroundColor: Colours.app_main_light,
-
-      ),
       Gaps.vGap10,
       Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -314,11 +315,47 @@ class _SMSLoginPageState extends State<SMSLoginPage>
           ))
         ],
       ),
+      Gaps.vGap50,
+      Gaps.vGap10,
+      MyButton(
+        onPressed: _clickable ? _login : null,
+        text: "登录",
+        fontSize: Dimens.font_sp13,
+        textColor: Colours.material_bg,
+        disabledBackgroundColor: Colours.app_main_light,
+      ),
+      Gaps.vGap10,
+      Row(
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          Expanded(child: Gaps.empty),
+          Padding(
+              padding: EdgeInsets.only(top: 2.h, right: 2.w),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) {
+                        return PwdLoginPage();
+                      },
+                    ),
+                  );
+                },
+                child: Text(
+                  "密码登录",
+                  style:
+                      TextStyles.textSize10.copyWith(color: Colours.app_main),
+                ),
+              ))
+        ],
+      ),
     ];
   }
 
   LoginPresenter _loginPresenter;
   SmsLoginPresenter _smsLoginPresenter;
+
   @override
   PowerPresenter createPresenter() {
     final PowerPresenter powerPresenter = PowerPresenter<dynamic>(this);

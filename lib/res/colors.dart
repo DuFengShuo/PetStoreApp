@@ -2,10 +2,16 @@ import 'package:flutter/material.dart';
 
 class Colours {
   //0xFFfaa755
-  static const Color app_main = Color(0xFFf58220); //蜜柑色
-  static const Color dark_app_main = Color(0xFFf26522);
-  static const Color app_main_light = Color(0xFFfab27b);
-  static const Color app_main_light_text = Color(0xFFfaa755);
+  //0168B7
+  //f58220
+
+  static const Color app_main = Color(0xFF0168B7); //蜜柑色
+  static const Color dark_app_main = Color(0xFF0168B3);
+  // static const Color app_main_light = Color(0xFFfab27b);
+  // static const Color app_main_light_text = Color(0xFFfaa755);
+  static const Color app_main_light = Color(0xFF0168B7);
+
+  static const Color app_main_light_text = Colors.blueGrey;
 
   static const Color bg_color = Color(0xffF5F5F7);
   static const Color dark_bg_color = Color(0xFF18191A);

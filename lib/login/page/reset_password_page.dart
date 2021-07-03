@@ -1,5 +1,3 @@
-//密码登录
-import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -7,7 +5,7 @@ import 'package:local_life_app/common/common.dart';
 import 'package:local_life_app/login/iview/login_iview.dart';
 import 'package:local_life_app/login/models/area_code_model.dart';
 import 'package:local_life_app/login/models/user_bean.dart';
-import 'package:local_life_app/login/page/forget_password_page.dart';
+import 'package:local_life_app/login/page/paseword_login_page.dart';
 import 'package:local_life_app/login/presenter/login_presenter.dart';
 import 'package:local_life_app/login/provider/login_page_provider.dart';
 import 'package:local_life_app/login/widgets/Image_input_dialog.dart';
@@ -31,17 +29,19 @@ import 'package:local_life_app/widgets/my_scroll_view.dart';
 import 'package:local_life_app/login/widgets/my_text_field.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../login_router.dart';
 import 'package:local_life_app/util/screen_utils.dart';
 
-class PwdLoginPage extends StatefulWidget {
+/// design/1注册登录/index.html#artboard4
+class ResetPasswordPage extends StatefulWidget {
   @override
-  _PwdLoginPageState createState() => _PwdLoginPageState();
+  _ResetPasswordPageState createState() => _ResetPasswordPageState();
 }
 
-class _PwdLoginPageState extends State<PwdLoginPage>
+class _ResetPasswordPageState extends State<ResetPasswordPage>
     with
-        ChangeNotifierMixin<PwdLoginPage>,
-        BasePageMixin<PwdLoginPage, PowerPresenter>
+        ChangeNotifierMixin<ResetPasswordPage>,
+        BasePageMixin<ResetPasswordPage, PowerPresenter>
     implements LoginIMvpView, SmsLoginIMvpView {
   @override
   final LoginPageProvider provider = LoginPageProvider();
@@ -161,18 +161,18 @@ class _PwdLoginPageState extends State<PwdLoginPage>
   List<Widget> _buildBody() {
     return <Widget>[
       Text(
-        "密码登录",
+        "重置密码",
         style: TextStyle(
           fontSize: 18.0.sp,
           fontWeight: FontWeight.bold,
           color: Colours.text,
         ),
       ),
-      Gaps.vGap10,
-      Text(
-        '未注册的手机号验证通过后将自动注册',
-        style: TextStyles.textSize10.copyWith(color: Colours.text_gray_holder),
-      ),
+      //Gaps.vGap10,
+      // Text(
+      //   '未注册的手机号验证通过后将自动注册',
+      //   style: TextStyles.textSize10.copyWith(color: Colours.text_gray_holder),
+      // ),
       Gaps.vGap40,
       Row(
         children: [
@@ -203,23 +203,23 @@ class _PwdLoginPageState extends State<PwdLoginPage>
           //     // ),
           //   ),
           // ),
-
           Container(
-            padding: EdgeInsets.only(left: 10.w),
+            padding: EdgeInsets.only(left: 10.w, right: 15.w),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(50.r)),
                 color: Colours.bg_color),
             child: ConstrainedBox(
               constraints: BoxConstraints(
-                  maxWidth: context.width - 50.0.w,
+                  maxWidth: context.width - 65.0.w,
                   minHeight: 50.h,
                   maxHeight: 50.h),
               child: MyTextField(
-                focusNode: _nodeText1,
-                controller: _phoneController,
-                maxLength: 11,
-                keyboardType: TextInputType.phone,
-                hintText: "请输入手机号",
+                focusNode: _nodeText2,
+                controller: _vCodeController,
+                maxLength: 33,
+                keyboardType: TextInputType.visiblePassword,
+                isInputPwd: true,
+                hintText: "输入新密码",
               ),
             ),
           )
@@ -227,159 +227,120 @@ class _PwdLoginPageState extends State<PwdLoginPage>
       ),
       Gaps.vGap24,
       // Text(
-      //   '密码',
+      //   '验证码',
       //   style:
-      //   Theme.of(context).textTheme.subtitle1.copyWith(fontSize: 15.0.sp),
+      //       Theme.of(context).textTheme.subtitle1.copyWith(fontSize: 15.0.sp),
       // ),
-      Consumer<LoginPageProvider>(builder: (_, provider, __) {
-        return Container(
-          padding: EdgeInsets.only(left: 10.w, right: 15.w),
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(50.r)),
-              color: Colours.bg_color),
-          child: ConstrainedBox(
-            constraints: BoxConstraints(
-                maxWidth: context.width - 65.0.w,
-                minHeight: 50.h,
-                maxHeight: 50.h),
-            child: MyTextField(
-              focusNode: _nodeText2,
-              controller: _vCodeController,
-              maxLength: 33,
-              keyboardType: TextInputType.visiblePassword,
-              isInputPwd: true,
-              hintText: "请输入密码",
-            ),
+      Container(
+        padding: EdgeInsets.only(left: 10.w, right: 15.w),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(50.r)),
+            color: Colours.bg_color),
+        child: ConstrainedBox(
+          constraints: BoxConstraints(
+              maxWidth: context.width - 65.0.w,
+              minHeight: 50.h,
+              maxHeight: 50.h),
+          child: MyTextField(
+            focusNode: _nodeText2,
+            controller: _vCodeController,
+            maxLength: 33,
+            keyboardType: TextInputType.visiblePassword,
+            isInputPwd: true,
+            hintText: "重新输入新密码",
           ),
-        );
-
-        //   MyTextField(
-        //   key: const Key('vcode'),
-        //   focusNode: _nodeText2,
-        //   controller: _vCodeController,
-        //   keyboardType: TextInputType.number,
-        //   provider: provider,
-        //   getVCode: () async {
-        //     final String name = _phoneController.text;
-        //     if (name.isEmpty) {
-        //       Toast.show("手机号为空");
-        //       return Future<bool>.value(false);
-        //     } else {
-        //       // Toast.show(AppLocalizations.of(context).verificationButton);
-        //       /// 一般可以在这里发送真正的请求，请求成功返回true
-        //       final Map<String, String> params = <String, String>{};
-        //       params['account'] = _phoneController.text;
-        //       _sendSmsCode = true;
-        //       // await _smsLoginPresenter.captchaImage(params);
-        //       return true;
-        //     }
-        //   },
-        //   maxLength: 4,
-        //   hintText: "验证码",
-        // );
-      }),
-      Gaps.vGap10,
-      Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          SizedBox(
-            width: 25,
-            height: 25,
-            child: InkWell(
-              onTap: () async {
-                setState(() {
-                  _checkboxSelected = !_checkboxSelected;
-                });
-                await SpUtil.putBool(
-                    Constant.checkboxSelected, _checkboxSelected);
-                _verify();
-              },
-              child: IconFont(
-                  name: _checkboxSelected ? 0xe61b : 0xe61c,
-                  size: 13.sp,
-                  color: Colours.app_main),
-            ),
-          ),
-          Expanded(
-              child: Padding(
-            padding: EdgeInsets.only(top: 2.h),
-            child: RichText(
-              maxLines: 2,
-              text: TextSpan(
-                text: '登录注册代表同意',
-                style: Theme.of(context).textTheme.subtitle2,
-                children: <TextSpan>[
-                  TextSpan(
-                    text: '《用户协议》',
-                    style: TextStyle(color: Theme.of(context).errorColor),
-                    recognizer: TapGestureRecognizer()
-                      ..onTap = () {
-                        _launchWebURL('User agreement', HttpApi.treatyTerms);
-                      },
-                  ),
-                  TextSpan(text: '和'),
-                  TextSpan(
-                    text: '《隐私政策》',
-                    style: TextStyle(color: Theme.of(context).errorColor),
-                    recognizer: TapGestureRecognizer()
-                      ..onTap = () {
-                        _launchWebURL('User agreement', HttpApi.privacyPolicy);
-                      },
-                  ),
-                  TextSpan(text: Utils.getCurrLocale() == 'zh' ? '。' : '.'),
-                ],
-              ),
-            ),
-          ))
-        ],
+        ),
       ),
+      Gaps.vGap10,
+      // Row(
+      //   crossAxisAlignment: CrossAxisAlignment.start,
+      //   children: [
+      //     SizedBox(
+      //       width: 25,
+      //       height: 25,
+      //       child: InkWell(
+      //         onTap: () async {
+      //           setState(() {
+      //             _checkboxSelected = !_checkboxSelected;
+      //           });
+      //           await SpUtil.putBool(
+      //               Constant.checkboxSelected, _checkboxSelected);
+      //           _verify();
+      //         },
+      //         child: IconFont(
+      //             name: _checkboxSelected ? 0xe61b : 0xe61c,
+      //             size: 13.sp,
+      //             color: Colours.app_main),
+      //       ),
+      //     ),
+      //     Expanded(
+      //         child: Padding(
+      //           padding: EdgeInsets.only(top: 2.h),
+      //           child: RichText(
+      //             maxLines: 2,
+      //             text: TextSpan(
+      //               text: '登录注册代表同意',
+      //               style: Theme.of(context).textTheme.subtitle2,
+      //               children: <TextSpan>[
+      //                 TextSpan(
+      //                   text: '《用户协议》',
+      //                   style: TextStyle(color: Theme.of(context).errorColor),
+      //                   recognizer: TapGestureRecognizer()
+      //                     ..onTap = () {
+      //                       _launchWebURL('User agreement', HttpApi.treatyTerms);
+      //                     },
+      //                 ),
+      //                 TextSpan(text: '和'),
+      //                 TextSpan(
+      //                   text: '《隐私政策》',
+      //                   style: TextStyle(color: Theme.of(context).errorColor),
+      //                   recognizer: TapGestureRecognizer()
+      //                     ..onTap = () {
+      //                       _launchWebURL('User agreement', HttpApi.privacyPolicy);
+      //                     },
+      //                 ),
+      //                 TextSpan(text: Utils.getCurrLocale() == 'zh' ? '。' : '.'),
+      //               ],
+      //             ),
+      //           ),
+      //         ))
+      //   ],
+      // ),
       Gaps.vGap50,
       Gaps.vGap10,
       MyButton(
         onPressed: _clickable ? _login : null,
-        text: "登录",
+        text: "保存",
         fontSize: Dimens.font_sp13,
         textColor: Colours.material_bg,
         disabledBackgroundColor: Colours.app_main_light,
       ),
-      Gaps.vGap10,
-      Row(
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: [
-          Padding(
-              padding: EdgeInsets.only(top: 2.h, right: 2.w),
-              child: GestureDetector(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) {
-                        return ForgetPasswordPage();
-                      },
-                    ),
-                  );
-                },
-                child: Text(
-                  "忘记密码",
-                  style:
-                      TextStyles.textSize10.copyWith(color: Colours.app_main),
-                ),
-              )),
-          Expanded(child: Gaps.empty),
-          Padding(
-              padding: EdgeInsets.only(top: 2.h, right: 2.w),
-              child: GestureDetector(
-                onTap: () {
-                 Navigator.pop(context);
-                },
-                child: Text(
-                  "验证码登录",
-                  style:
-                      TextStyles.textSize10.copyWith(color: Colours.app_main),
-                ),
-              ))
-        ],
-      ),
+      // Gaps.vGap10,
+      // Row(
+      //   crossAxisAlignment: CrossAxisAlignment.end,
+      //   children: [
+      //     Expanded(child: Gaps.empty),
+      //     Padding(
+      //         padding: EdgeInsets.only(top: 2.h, right: 2.w),
+      //         child: GestureDetector(
+      //           onTap: () {
+      //             Navigator.push(
+      //               context,
+      //               MaterialPageRoute(
+      //                 builder: (context) {
+      //                   return PwdLoginPage();
+      //                 },
+      //               ),
+      //             );
+      //           },
+      //           child: Text(
+      //             "密码登录",
+      //             style:
+      //             TextStyles.textSize10.copyWith(color: Colours.app_main),
+      //           ),
+      //         ))
+      //   ],
+      // ),
     ];
   }
 
