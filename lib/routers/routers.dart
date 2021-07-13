@@ -5,12 +5,15 @@ import 'package:local_life_app/login/login_router.dart';
 import 'package:local_life_app/mine/mine_router.dart';
 import 'package:local_life_app/widgets/webview_page.dart';
 import 'package:local_life_app/routers/not_found_page.dart';
+
 // ignore: avoid_classes_with_only_static_members
 import 'package:local_life_app/home/home_page.dart';
 import 'package:local_life_app/routers/i_router.dart';
+
 class Routes {
   static String home = '/home';
   static String webViewPage = '/webView';
+
   //
   static final List<IRouterProvider> _listRouter = [];
 
@@ -24,11 +27,10 @@ class Routes {
       return NotFoundPage();
     });
 
-    router.define(home,
-        handler: Handler(
+    router.define(home, handler: Handler(
             handlerFunc:
                 (BuildContext context, Map<String, List<String>> params) =>
-                HomePage()));
+                    HomePage()));
 
     router.define(webViewPage, handler: Handler(handlerFunc: (_, params) {
       final String title = params['title']?.first;
@@ -43,6 +45,7 @@ class Routes {
 
     _listRouter.add(MineRouter());
     _listRouter.add(HomeRouter());
+
     /// 初始化路由
     _listRouter.forEach((routerProvider) {
       routerProvider.initRouter(router);
