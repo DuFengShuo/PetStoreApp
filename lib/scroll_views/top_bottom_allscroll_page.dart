@@ -94,7 +94,7 @@ class _ScrollablePositionedListPageState
         centerTitle: true,
         backgroundColor: Colours.app_main,
         title: Text(
-          "Companies",
+          "联动",
           style: TextStyles.textSize16,
         ),
         bottom:PreferredSize(

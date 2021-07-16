@@ -117,7 +117,6 @@ class _PageTabViewState extends State<PageTabView>with SingleTickerProviderState
           itemBuilder: (context, index) {
             return Container(
               width: Screen.width(context),
-
               decoration: BoxDecoration(
                   color: Colours.bg_color,
                   // border: Border(bottom: BorderSide(width: 1,color: Colours.red))

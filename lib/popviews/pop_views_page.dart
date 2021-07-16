@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:local_life_app/center/widget/select_sendcontent_widget.dart';
 import 'package:local_life_app/res/resources.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 class PopViewPages extends StatefulWidget {
   const PopViewPages({Key key}) : super(key: key);
 
@@ -9,6 +12,34 @@ class PopViewPages extends StatefulWidget {
 
 class _PopViewPagesState extends State<PopViewPages> {
   List datas = ["底部弹出","顶部弹出","中间提示框",];
+
+  showSelectServiceBottom(BuildContext context, List data, String title) {
+    showModalBottomSheet(
+      //带背景的弹框
+        backgroundColor: Colors.transparent, //重点
+        context: context,
+        builder: (BuildContext context) {
+          return new Container(
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20.r),
+                  topRight: Radius.circular(20.r),
+                ),
+              ),
+              //  padding: EdgeInsets.only(top: 20, bottom: 10),
+               height: 340.0.h,
+              child: SelectSendContentWidget(
+                datas: data,
+                title: title,
+                callBack: (result) {
+                  print("===$result===");
+                },
+              ));
+        });
+  }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -35,7 +66,14 @@ class _PopViewPagesState extends State<PopViewPages> {
               InkWell(
                 splashColor: Colours.dark_text_disabled,
                 onTap: (){
-
+                  switch(index){
+                    case 0:
+                      showSelectServiceBottom(context, ["one","two","three"], "底部弹出单选");
+                      return;
+                    case 1:
+                      showSelectServiceBottom(context, ["one","two","three"], "底部弹出单选");
+                      return;
+                  }
                 },
                 child:  ListTile(
                   contentPadding: EdgeInsets.only(left: 20),
