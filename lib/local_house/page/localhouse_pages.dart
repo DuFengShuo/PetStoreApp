@@ -67,6 +67,7 @@ class _LocalHousePageState extends State<LocalHousePage>
         ChangeNotifierProvider<BaseListProvider<dynamic>>(
             create: (_) => companyListProvider),
       ],
+
       child: Consumer<BaseListProvider<dynamic>>(
         builder: (_, companyListProvider, __) {
           return DeerListView(
