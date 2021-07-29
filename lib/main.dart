@@ -5,6 +5,7 @@ import 'package:flutter_jpush/flutter_jpush.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:local_life_app/common/common.dart';
+import 'package:local_life_app/home/home_list_page.dart';
 import 'package:local_life_app/util/device_utils.dart';
 import 'package:local_life_app/util/log_utils.dart';
 import 'package:local_life_app/util/sp_utils.dart';
@@ -194,7 +195,8 @@ class MyApp extends StatelessWidget {
         theme: theme ?? provider.getTheme(),
         darkTheme: provider.getTheme(isDarkMode: true),
         themeMode: provider.getThemeMode(),
-        home: home ?? SplashPage(),
+        // home: home ?? SplashPage(),
+        home: HomeListPage(),
         onGenerateRoute: Routes.router.generator,
         supportedLocales: localeProvider.supportedLocales,
         locale: localeProvider.locale,

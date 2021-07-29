@@ -93,34 +93,44 @@ class _SelectSendContentWidgetState extends State<SelectSendContentWidget> {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
-            padding: EdgeInsets.only(top: 15.h, left: 15.w),
-            child: Row(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text(
-                  "${widget.title}",
-                  style: TextStyles.textBold15,
-                ),
-                Expanded(child: Container()),
-                SizedBox(
-                  width: 55,
-                  height: 35,
-                  child: IconButton(
-                      icon: Icon(
-                        Icons.cancel_outlined,
-                        color: Colors.black,
-                      ),
-                      onPressed: () {
-                        Navigator.pop(context);
-                      }),
-                )
-              ],
+          Container(
+            decoration: BoxDecoration(
+              color: Colours.bg_color,
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20.r),
+                topRight: Radius.circular(20.r),
+              ),
+            ),
+            child: Padding(
+              padding: EdgeInsets.only(top: 10.h, left: 15.w,bottom: 10.h,right: 5.w),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(
+                    "${widget.title}",
+                    style: TextStyles.textBold15,
+                  ),
+                  Expanded(child: Container()),
+                  SizedBox(
+                    width: 55,
+                    height: 35,
+                    child: IconButton(
+                        icon: Icon(
+                          Icons.clear,
+                          color: Colours.text,
+                        ),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        }),
+                  )
+                ],
+              ),
             ),
           ),
           Gaps.vGap15,
           Expanded(
             child: Container(
+
                 margin: EdgeInsets.only(
                   left: 10.w,
                   right: 10.w,
