@@ -39,7 +39,7 @@ class ThemeProvider extends ChangeNotifier {
   ThemeData getTheme({bool isDarkMode = false}) {
     return ThemeData(
       errorColor: isDarkMode ? Colours.dark_red : Colours.red,
-      brightness: isDarkMode ? Brightness.dark : Brightness.light,
+      brightness:Brightness.light,
       primaryColor: isDarkMode ? Colours.dark_app_main : Colours.app_main,
       accentColor: isDarkMode ? Colours.dark_app_main : Colours.app_main,
       // Tab指示器颜色
@@ -71,7 +71,7 @@ class ThemeProvider extends ChangeNotifier {
       appBarTheme: AppBarTheme(
         elevation: 0.0,
         color: isDarkMode ? Colours.dark_bg_color : Colors.white,
-        brightness: isDarkMode ? Brightness.dark : Brightness.light,
+        brightness: Brightness.dark
       ),
       dividerTheme: DividerThemeData(
           color: isDarkMode ? Colours.dark_line : Colours.line,

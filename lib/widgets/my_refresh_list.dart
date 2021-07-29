@@ -65,13 +65,13 @@ class _DeerListViewState extends State<DeerListView> {
               //     //infoColor: Colours.app_main
               // ),
               footer: ClassicalFooter(
-                  infoColor: Colours.app_main,
+                  infoColor: Colours.material_bg,
                   loadingText: "努力加载中...",
                   loadReadyText: "上拉加载",
                   loadFailedText: "加载失败",
                   showInfo: false),
               header: BallPulseHeader(
-                  color: Colours.app_main
+                  color: Colours.material_bg
               ),
               // footer: BallPulseFooter(
               //   color: Colours.app_main

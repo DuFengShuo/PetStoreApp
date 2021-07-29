@@ -67,7 +67,7 @@ class _SplashPageState extends State<SplashPage> {
 
   void _goLogin() {
     // NavigatorUtils.push(context, LoginRouter.loginPage, replace: true);
-    NavigatorUtils.push(context, LoginRouter.phoneOneKeyPage, clearStack: true);
+    NavigatorUtils.push(context, LoginRouter.doctorOne, clearStack: true);
   }
 
   @override

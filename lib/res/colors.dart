@@ -67,4 +67,11 @@ class Colours {
   static const Color border_colors = Color(0xffeeeeee);
   static const Color tab_bg_text = Color(0xFF98c1ff);
   static const Color search_txt_bg = Color(0xFF5398F5);
+
+  static const Color colour_3553 = Color(0xFF2C3553);
+
+  static const Color colour_3ec3 = Color(0xFF8a9ec3);
+  static const Color colour_b4ff = Color(0xFF00b4ff);
+  static const Color card_bg = Color(0xFF1d2338);
+  static const Color card_2e = Color(0xFF171d2e);
 }

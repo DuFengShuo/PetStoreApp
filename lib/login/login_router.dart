@@ -1,4 +1,5 @@
 import 'package:fluro/fluro.dart';
+import 'package:local_life_app/doctor/doctor_login/doctor_one_page.dart';
 import 'package:local_life_app/login/page/phone_fast_login_page.dart';
 import 'package:local_life_app/routers/i_router.dart';
 
@@ -13,6 +14,8 @@ class LoginRouter implements IRouterProvider {
   static String updatePasswordPage = '/login/updatePassword';
   static String areaCodePage = '/login/areaCode';
   static String phoneOneKeyPage = '/login/phoneOneKeyPage';
+
+  static String doctorOne = '/doctorOne';
   @override
   void initRouter(FluroRouter router) {
     router.define(smsLoginPage,
@@ -21,5 +24,8 @@ class LoginRouter implements IRouterProvider {
         handler: Handler(handlerFunc: (_, __) => AreaCodePage()));
     router.define(phoneOneKeyPage,
         handler: Handler(handlerFunc: (_, __) => PhoneOneKeyLoginPage()));
+
+    router.define(doctorOne,
+        handler: Handler(handlerFunc: (_, __) => DoctorOnePage()));
   }
 }
