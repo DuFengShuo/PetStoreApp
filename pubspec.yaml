@@ -75,7 +75,7 @@ dependencies:
   package_info: ^2.0.0
   # 屏幕适配 https://pub.flutter-io.cn/packages/flutter_screenutil
   flutter_screenutil: ^5.0.0+2
-  flutter_jpush: ^0.0.4
+#  flutter_jpush: ^0.0.4
   scrollable_positioned_list: ^0.1.10
 #  sy_flutter_wechat: ^0.2.2
 #  fluwx: ^3.4.2
